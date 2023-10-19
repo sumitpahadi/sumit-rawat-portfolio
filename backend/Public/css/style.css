@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --green: #27ae60;
+  font-family: Bogart-med;
+}
+
+h1 {
+  font-family: Bogart-med;
+  font-size: 6.5rem;
+  background-image: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  padding-left: 30rem;
+}
+
+body.active {
+  --black: #fff;
+  --light-color: #ddd;
+  --bg-color: #222;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.4);
+  --box-shadow: 0.4rem 0.4rem 1rem #111, -0.4rem -0.4rem 1rem #333;
+  --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
+    -0.4rem -0.4rem 1rem #333 inset;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: url("./bg05.jpg");
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  background: none;
+  color: var(--black);
+  box-shadow: var(--box-shadow);
+}
+
+.btn:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}
+
+.heading {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--black);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.heading span {
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: var(--bg-color);
+  width: 30rem;
+  border-right: var(--border);
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+}
+
+.header .user img {
+  margin: 1rem 0;
+  border: 1rem solid transparent;
+  border-radius: 50%;
+  height: 18rem;
+  width: 18rem;
+  box-shadow: var(--box-shadow);
+}
+
+.header .user h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  background-image: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  font-family: Bogart-med;
+}
+
+.header .user p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.str1 {
+  display: inline-block;
+}
+
+.header .navbar a {
+  display: block;
+  margin: 1.5rem 0;
+  padding: 0.7rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  box-shadow: var(--box-shadow);
+  color: white;
+  font-family: Bogart-med;
+}
+
+.header .navbar a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}
+
+#menu-btn {
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: aliceblue;
+  background: var(--bg-color);
+  display: none;
+}
+
+#menu-btn:hover {
+  box-shadow: var(--box-shadow-inset);
+}
+
+#theme-toggler {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  color: var(--black);
+  background: var(--bg-color);
+}
+
+#theme-toggler:hover {
+  color: var(--green);
+  box-shadow: var(--box-shadow-inset);
+}
+
+.home {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://deekshasharma.vercel.app/img/bg05.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+}
+
+.home .content h3 {
+  font-size: 7rem;
+  color: var(--black);
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-family: Bogart-med;
+  font-size: 6.5rem;
+  
+  background-image: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+
+.home .content p {
+  font-size: 2rem;
+  color: var(--green);
+  padding-bottom: 0.5rem;
+  font-family: Bogart-med;
+  font-size: 3.5rem;
+  background-image: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+}
+.btn {
+  font-family: Bogart-med;
+  font-size: large;
+  font-weight: bold;
+  box-shadow: 1px -1px 29px white;
+
+  background-image: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  border: 2px solid white;
+}
+.home .share {
+  position: relative;
+  top: 4rem;
+  border-radius: 4rem;
+  box-shadow: var(--box-shadow);
+  /* padding: 1rem; */
+  border: 2px solid white;
+  color: white;
+  width: 35rem;
+  box-shadow: 1px -1px 29px white;
+}
+
+.home .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  box-shadow: var(--box-shadow);
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  font-size: xx-large;
+  border-radius: 1rem;
+}
+.fa-facebook-f {
+  background-color: blue;
+}
+.fa-github {
+  background-color: #111;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.home .share a:hover {
+  box-shadow: var(--box-shadow-inset);
+  color: var(--green);
+}
+
+.fa-linkedin {
+  background-color: #0077b5;
+}
+.about {
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+  background-size: contain;
+  background-size: cover;
+}
+
+.my-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.education {
+  margin-top: 20px;
+  color: white;
+  padding: 4rem;
+  border: 2px solid white;
+  width: 40rem;
+  font-size: large;
+  font-family: Bogart-med;
+  box-shadow: 1px -1px 29px white;
+  border-radius: 10px;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+}
+
+.about .row .box-container {
+  flex: 1 1 40rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about .row .box-container .box {
+  flex: 1 1 18rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.about .row .box-container .box h3 {
+  font-size: 5rem;
+  color: var(--black);
+  line-height: 1.1;
+}
+
+.about .row .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+  font-family: Bogart-med;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+  color: white;
+  font-family: Bogart-med;
+}
+
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: var(--black);
+  line-height: 1.8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .row .content h3 span {
+  color: var(--green);
+}
+
+.about .row .content p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+  font-family: Bogart-med;
+}
+
+.about .row:nth-child(3) {
+  padding-top: 2rem;
+}
+
+.about .row .progress {
+  flex: 1 1 40rem;
+  color: white;
+  font-size: large;
+  width: 18rem;
+  font-family: Bogart-med;
+}
+
+.about .row .progress h3 {
+  color: var(--black);
+  font-weight: normal;
+  font-size: 2rem;
+  font-family: Bogart-med;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .row .progress .bar {
+  box-shadow: var(--box-shadow);
+  border-radius: 5rem;
+  height: 2rem;
+  width: 34rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.about .row .progress .bar span {
+  display: block;
+  height: 100%;
+  background-color: white;
+  border-radius: 5rem;
+  box-shadow: -2px -1px 13px white;
+}
+
+.about .row .progress .bar-1-1 span {
+  width: 90%;
+}
+
+.about .row .progress .bar-1-2 span {
+  width: 75%;
+}
+
+.about .row .progress .bar-1-3 span {
+  width: 80%;
+}
+
+.about .row .progress .bar-2-1 span {
+  width: 95%;
+}
+
+.about .row .progress .bar-2-2 span {
+  width: 89%;
+}
+
+.about .row .progress .bar-2-3 span {
+  width: 65%;
+}
+.services {
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+  background-size: contain;
+  background-size: cover;
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.services .box-container .box {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.services .box-container .box i {
+  font-size: 4rem;
+  padding-bottom: 5rem;
+  color: #fff;
+}
+
+.services .box-container .box h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.services .box-container .box p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.services .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--green);
+  z-index: -1;
+  clip-path: circle(9rem at 5% 0%);
+  transition: 0.3s linear;
+}
+
+.services .box-container .box:hover::before {
+  clip-path: circle(100%);
+}
+
+.services .box-container .box:hover > * {
+  color: #fff;
+}
+.portfolio {
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+  background-size: contain;
+  background-size: cover;
+}
+.portfolio .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 90px;
+}
+
+.portfolio .box-container .box {
+  height: 25rem;
+  width: 45rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  /* box-shadow: var(--box-shadow); */
+  position: relative;
+  border: 1rem solid transparent;
+  box-shadow: 0px 0px 6px 1px white;
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color);
+  display: grid;
+  place-items: center;
+  transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content {
+  transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: blue;
+  text-transform: uppercase;
+  transform: translateY(-5rem);
+  opacity: 0;
+  transition-delay: 0.3s;
+  font-family: Bogart-med;
+  font-size: x-large;
+  text-decoration: underline;
+  background-color: white;
+}
+
+.portfolio .box-container .box:hover .content h3 {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+::placeholder {
+  color: white;
+}
+
+.contact {
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+  background-size: contain;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Bogart-med;
+}
+.contact form {
+  margin: 1rem auto;
+  width: 506px;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border: 1px solid white;
+  color: whitesmoke;
+  height: 490px;
+}
+.contact iframe {
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 1px -1px 29px white;
+}
+
+.contact form .box {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.contact form textarea {
+  height: 20rem;
+  resize: none;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.contact form .box:focus {
+  box-shadow: var(--box-shadow-inset);
+}
+
+.credits {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 1rem;
+  border-top: var(--border);
+  color: white;
+  background-image: url(https://deekshasharma.vercel.app/img/bg05.jpg);
+  background-size: contain;
+  background-size: cover;
+  margin-top: -5px;
+  font-family: Bogart-med;
+}
+
+.credits span {
+  color: var(--green);
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding-left: 0;
+  }
+
+  .header {
+    left: -110%;
+  }
+
+  .header.active {
+    left: 0%;
+    transition: 0.4s linear;
+  }
+
+  #menu-btn {
+    display: initial;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    width: 50%;
+    border-right: 0;
+    background-image: url("https://deekshasharma.vercel.app/img/bg05.jpg");
+  }
+}
