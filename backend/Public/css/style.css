@@ -716,7 +716,7 @@ section {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 300px) {
   html {
     font-size: 50%;
   }
